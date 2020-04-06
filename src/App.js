@@ -1,8 +1,13 @@
 import React from 'react';
+
+import Layout from './components/Layout/Layout';
+
 function App() {
   return (
     <div>
-      Teste
+      <Layout>
+        <p>Our Burguer Builder App!</p>
+      </Layout>
     </div>
   );
 }
