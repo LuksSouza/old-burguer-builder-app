@@ -20,7 +20,7 @@ const Burguer = (props) => {
     }
 
     return (
-        <div className={classes.Burguer}>
+        <div className={classes.Burger}>
             <BurguerIngredient type="bread-top" />
             {transformedIngredients}
             <BurguerIngredient type="bread-bottom" />
