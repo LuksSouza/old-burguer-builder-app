@@ -36,12 +36,10 @@ class Checkout extends Component {
     }
 
     onCheckoutContinueHandler = () => {
-        console.log(this.props);
         this.props.history.replace("/checkout/contact-data");
     }
 
     onCheckoutCancelHandler = () => {
-        console.log(this.props);
         this.props.history.goBack();
     }
 
@@ -54,7 +52,7 @@ class Checkout extends Component {
                     cancel={this.onCheckoutCancelHandler} />
                 <Route 
                     path={`${this.props.match.path}/contact-data`}
-                    render={() => <ContactData ingredients={this.state.ingredients} price={this.state.price} {...this.props} /> } />
+                    render={(props) => <ContactData ingredients={this.state.ingredients} price={this.state.price} {...this.props} /> } />
             </Fragment>
         );
     }

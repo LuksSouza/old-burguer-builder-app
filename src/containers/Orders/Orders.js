@@ -37,11 +37,9 @@ class Orders extends Component {
             orders = <Spinner />
         } else {
             orders = this.state.orders.map(order => {
-                return <Order key={order.key} ingredients={order.ingredients} price={order.price} />
+                return <Order key={order.id} ingredients={order.ingredients} price={order.price} />
             });
         }
-
-        console.log(this.state);
 
         return (
             <div>
